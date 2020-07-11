@@ -1,0 +1,316 @@
+/********** Fontes **********/
+
+@font-face {
+  font-family: 'Niconne';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Niconne-Regular.ttf);
+
+}
+/********** Final Fontes **********/
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+/********** Body da página ***********/
+
+.corpo {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  /* #F1F5F8 */
+}
+
+
+/********** Menu de navegação ***********/
+
+nav .logo {
+  padding-left: 30px;
+  margin-top: -50px;
+  width: 400px;
+  margin-bottom: -50px;
+
+}
+
+/* font-family: 'Niconne', cursive; */
+nav .menu {
+  font-family: "Comic Sans MS";
+  font-size: 20px;
+  color: black;
+  padding-right: 20px;
+}
+
+.navbar.navbar-light {
+  background-color: #FFFFFF !important;
+}
+
+nav .menu li a:before {
+  content: '|';
+  color: ##7d3f3d;
+  padding-right: 10px;
+}
+
+
+/*********** FOOTER ***********/
+
+footer .rodape p {
+  color: #999;
+  line-height: 25px;
+}
+
+footer .rodape h2,
+h3 {
+  color: #fff;
+}
+
+footer .rodape h2 {
+  font-size: 18px;
+}
+
+.footer-top {
+  background-color: #111;
+  padding: 80px 0;
+}
+
+.footer-endereco h2 {
+  color: #fff;
+  font-family: Poppins;
+  text-transform: uppercase;
+}
+
+.footer-contato h2 {
+  color: #fff;
+  font-family: Poppins;
+  text-transform: uppercase;
+}
+
+.footer-contato h2:before {
+  content: '|';
+  color: #c65039;
+  padding-right: 10px;
+}
+
+.footer-redesocial h2 {
+  color: #fff;
+  font-family: Poppins;
+  text-transform: uppercase;
+}
+
+.footer-redesocial h2:before {
+  content: '|';
+  color: #c65039;
+  padding-right: 10px;
+}
+
+.footer-redesocial a {
+  background-color: #494848;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.footer-redesocial a {
+  font-size: 20px;
+  color: #fff;
+  padding: 5px 12px;
+}
+
+.footer-bottom-text {
+  text-align: center;
+  background-color: #000;
+  line-height: 75px;
+  margin-bottom: -30px;
+}
+
+
+/********** Menu Index **********/
+
+/*Efeito Overlay nas imagem*/
+.drk:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.3;
+}
+/*Final do código Overlay*/
+
+.img-parallax {
+  background-image: url(../img/home-parallax.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  color: #fff;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+
+/*********** Sobre nós ***********/
+
+.titulo-sobrenos {
+  margin-top: 100px;
+  font-family: 'Cuprum', sans-serif;
+}
+
+
+/*********** Menu Serviços ***********/
+
+.titulo-servicos {
+  margin-top: 30px;
+  font-family: 'Cuprum', sans-serif;
+}
+
+
+
+/********** Menu Galeria **********/
+
+.galeria-titulo {
+  background-color: #e1a894;
+  font-family: 'sans-serif';
+  padding-top: 50px;
+  height: 180px;
+
+}
+
+.galeria {
+    padding-top: 30px;
+}
+
+.galeria-titulo h1 {
+  font-size: 60px;
+}
+
+.gallery {
+  margin: 10px 50px;
+  border: solid 1px;
+  margin-bottom: 50px;
+}
+
+.gallery img {
+  transition: 1s;
+  padding: 15px;
+  width: 350px;
+  height: 300px;
+  margin-left: 25px;;
+}
+
+.gallery img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+
+/*galeria de imagens*/
+#galeria .col-lg-4 {
+  margin: 0 !important;
+  padding: 25px;
+}
+
+#galeria img {
+  width: 100%;
+  height: 250;
+}
+
+#galeria img:hover {
+  border: 5px solid #f7f7f7;
+}
+
+
+/*********** Menu Contato ***********/
+
+.contato-titulo {
+  background-color: #e1a894;
+  padding-top: 40px;
+  height: 180px;
+
+}
+
+.contato-titulo h1 {
+  font-size: 80px;
+  font-family: 'Niconne', cursive;
+}
+
+.contato {
+  padding-top: 30px;
+}
+
+.rede-sociais {
+  margin-bottom: -50px;
+}
+
+/* Efeito zoom na imagem */
+.zoom {
+	overflow: hidden;
+}
+
+.zoom img {
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.zoom:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+/* Fim efeito Zoom*/
+
+
+.map-container-6 {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-container-6 iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.contato-contatos h2 {
+  padding-bottom: 15px;
+  font-size: 25px;
+}
+
+.contato-contatos {
+  padding-bottom: 20px;
+  background-color: #fff;
+  padding-top: 20px;
+  color: #7d3f3d;
+  margin-bottom: 30px;
+}
+
+.contato-contatos p {
+  color: black;
+}
+
+.contact-section {
+  margin-top: -10px;
+}
+
+.formulario-contato{
+  margin-bottom: -10px;
+  padding-top: 15px;
+  
+}
+
+
