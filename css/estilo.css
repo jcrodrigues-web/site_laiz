@@ -5,10 +5,25 @@
   font-style: normal;
   font-weight: 400;
   src: url(../fonts/Niconne-Regular.ttf);
-
 }
-/********** Final Fontes **********/
 
+@font-face {
+  font-family: 'Sriracha';
+  font-style: cursive;
+  font-weight: 400;
+  src: url(../fonts/Sriracha-Regular.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+/*  'Patrick Hand', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');  
+/*font-family: 'Courgette', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+/*font-family: 'Sriracha', cursive; */
+ 
+
+/********** Final Fontes **********/
 
 * {
   margin: 0px;
@@ -34,10 +49,11 @@ nav .logo {
   margin-top: -50px;
   width: 400px;
   margin-bottom: -50px;
-
 }
 
+
 /* font-family: 'Niconne', cursive; */
+
 nav .menu {
   font-family: "Comic Sans MS";
   font-size: 20px;
@@ -131,7 +147,13 @@ footer .rodape h2 {
 
 /********** Menu Index **********/
 
+#myCarousel {
+  margin-bottom: 130px;
+}
+
+
 /*Efeito Overlay nas imagem*/
+
 .drk:after {
   content: "";
   display: block;
@@ -143,6 +165,8 @@ footer .rodape h2 {
   background: #000;
   opacity: 0.3;
 }
+
+
 /*Final do código Overlay*/
 
 .img-parallax {
@@ -159,11 +183,98 @@ footer .rodape h2 {
 }
 
 
+/*Imagem Paralax */
+
+@media (max-width: 600px) {
+  .img-parallax {
+    background-image: url(../img/home-parallax.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 300px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 770px) {
+  .img-parallax {
+    background-image: url(../img/home-parallax.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
+
+
 /*********** Sobre nós ***********/
 
 .titulo-sobrenos {
-  margin-top: 100px;
-  font-family: 'Cuprum', sans-serif;
+  background-image: url(../img/1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+  height: 160px;
+  margin-bottom: 60px;
+}
+
+.titulo-sobrenos h1 {
+  font-size: 60px;
+  font-family: 'Niconne', cursive;
+  
+}
+
+.subtitulo-sobrenos h2 {
+  font-family: 'Sriracha', cursive;;   
+}
+
+.marketing {
+  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+  .titulo-sobrenos {
+    width: 100%;
+    height: auto;
+  }
+  .titulo-sobrenos h1 {
+    font-size: 40px;
+  }
+  .subtitulo-sobrenos h2 {
+    font-size: 30px;
+  }
+  
+  .marketing h2 {
+    font-size: 30px;
+  }
+  
+  .titulo-sobrenos {
+    background-image: url(../img/1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 770px) {
+  .contato-titulo {
+    width: 100%;
+    height: auto;
+  }
+  .contato-titulo h1 {
+    font-size: 60px;
+  }
+  .contato h2 {
+    font-size: 30px;
+  }
+  .contato-titulo {
+    background-image: url(../img/1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 
@@ -174,30 +285,68 @@ footer .rodape h2 {
   font-family: 'Cuprum', sans-serif;
 }
 
+@media (max-width: 600px) {
+  .jumbotron {
+    width: 100%;
+    height: auto;
+  }
+  .jumbotron h1 {
+    font-size: 60px;
 
+  }
+  .servicos h2 {
+    font-size: 30px;
+  }
+  .jumbotron {
+    background-image: url(../img/servicostitulo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 770px) {
+  .jumbotron {
+    width: 100%;
+    height: auto;
+  }
+  .jumbotron h1 {
+    font-size: 60px;
+
+  }
+  .servicos h2 {
+    font-size: 30px;
+  }
+  .jumbotron {
+    background-image: url(../img/servicostitulo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 
 /********** Menu Galeria **********/
 
-.galeria-titulo {
-  background-color: #e1a894;
-  font-family: 'sans-serif';
-  padding-top: 50px;
-  height: 180px;
+.titulo-galeria {
+  background-image: url(../img/1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+  height: 160px;
+}
 
+.titulo-galeria h1 {
+  font-size: 60px;
+  font-family: 'Niconne', cursive;
+  
 }
 
 .galeria {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
-.galeria-titulo h1 {
-  font-size: 60px;
-}
-
-.gallery {
-  margin: 10px 50px;
-  border: solid 1px;
-  margin-bottom: 50px;
+.galeria h2 {
+  font-family: 'Sriracha', cursive;;   
 }
 
 .gallery img {
@@ -205,7 +354,7 @@ footer .rodape h2 {
   padding: 15px;
   width: 350px;
   height: 300px;
-  margin-left: 25px;;
+  margin-left: 10px;
 }
 
 .gallery img:hover {
@@ -213,7 +362,13 @@ footer .rodape h2 {
   transform: scale(1.1);
 }
 
+.gallery {
+  margin-bottom: 70px;
+}
+
+
 /*galeria de imagens*/
+
 #galeria .col-lg-4 {
   margin: 0 !important;
   padding: 25px;
@@ -228,6 +383,64 @@ footer .rodape h2 {
   border: 5px solid #f7f7f7;
 }
 
+@media (max-width: 600px) {
+  .titulo-galeria {
+    width: 100%;
+    height: auto;
+  }
+  .titulo-galeria h1 {
+    font-size: 40px;
+
+  }
+  .galeria h2 {
+    font-size: 30px;
+  }
+  .titulo-galeria {
+    background-image: url(../img/1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .gallery img {
+    margin-left: -10px;
+  }
+}
+
+
+@media (max-width: 770px) {
+  .titulo-galeria {
+    width: 100%;
+    height: auto;
+  }
+  .titulo-galeria h1 {
+    font-size: 40px;
+
+  }
+  .galeria h2 {
+    font-size: 30px;
+  }
+  .titulo-galeria {
+    background-image: url(../img/1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+  .gallery a {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .gallery a {
+    width: 100%;
+  }
+}
+
 
 /*********** Menu Contato ***********/
 
@@ -235,7 +448,7 @@ footer .rodape h2 {
   background-color: #e1a894;
   padding-top: 40px;
   height: 180px;
-
+  background-image: url(../img/servicostitulo.png);
 }
 
 .contato-titulo h1 {
@@ -247,29 +460,37 @@ footer .rodape h2 {
   padding-top: 30px;
 }
 
+.contato h2 {
+  font-family: 'Sriracha', cursive;;   
+}
+
+
 .rede-sociais {
   margin-bottom: -50px;
 }
 
+
 /* Efeito zoom na imagem */
+
 .zoom {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .zoom img {
-	max-width: 100%;
-	-moz-transition: all 0.3s;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .zoom:hover img {
-	-moz-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
-/* Fim efeito Zoom*/
 
+
+/* Fim efeito Zoom*/
 
 .map-container-6 {
   overflow: hidden;
@@ -307,10 +528,52 @@ footer .rodape h2 {
   margin-top: -10px;
 }
 
-.formulario-contato{
+.formulario-contato {
   margin-bottom: -10px;
   padding-top: 15px;
-  
 }
 
+@media (max-width: 600px) {
+  .contato-titulo {
+    width: 100%;
+    height: auto;
+  }
+  .contato-titulo h1 {
+    font-size: 60px;
+    padding-bottom: 40px;
+  }
+  .contato h2 {
+    font-size: 30px;
+  }
+  .contato-titulo {
+    background-image: url(../img/servicostitulo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 
+@media (max-width: 770px) {
+  .contato-titulo {
+    width: 100%;
+    height: auto;
+  }
+  .contato-titulo h1 {
+    font-size: 60px;
+    padding-bottom: 40px;
+  }
+  .contato h2 {
+    font-size: 30px;
+  }
+  .contato-titulo {
+    background-image: url(../img/servicostitulo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+*
+/************************/
+
+*
