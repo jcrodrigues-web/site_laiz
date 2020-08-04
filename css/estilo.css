@@ -212,7 +212,7 @@ footer .rodape h2 {
 /*********** Sobre nós ***********/
 
 .titulo-sobrenos {
-  background-image: url(../img/1.png);
+  background-image: url(../img/2.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 40px;
@@ -251,7 +251,7 @@ footer .rodape h2 {
   }
   
   .titulo-sobrenos {
-    background-image: url(../img/1.png);
+    background-image: url(../img/2.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -326,7 +326,6 @@ footer .rodape h2 {
 }
 
 /********** Menu Galeria **********/
-
 .titulo-galeria {
   background-image: url(../img/1.png);
   background-repeat: no-repeat;
@@ -352,9 +351,9 @@ footer .rodape h2 {
 .gallery img {
   transition: 1s;
   padding: 15px;
-  width: 350px;
+  width: 365px;
   height: 300px;
-  /*margin-left: 10px;*/
+  margin-left: 10px;
 }
 
 .gallery img:hover {
@@ -401,9 +400,9 @@ footer .rodape h2 {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .gallery img {
+  /* .gallery img {
     margin-left: -10px;
-  }
+  } */
 }
 
 
