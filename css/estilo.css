@@ -191,8 +191,8 @@ footer .rodape h2 {
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-top: 300px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -436,7 +436,8 @@ footer .rodape h2 {
 
 @media only screen and (max-width: 500px) {
   .gallery a {
-    width: 100%;
+    width: 80%;
+    margin: 2px 0 -2px -12px;
   }
 }
 
